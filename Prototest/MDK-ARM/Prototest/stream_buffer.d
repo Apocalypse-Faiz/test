@@ -1,0 +1,14 @@
+prototest\stream_buffer.o: ../Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c
+prototest\stream_buffer.o: D:\Programfile\MDK\Core\ARM\ARM_Compiler_5.06u7\Bin\..\include\stdint.h
+prototest\stream_buffer.o: D:\Programfile\MDK\Core\ARM\ARM_Compiler_5.06u7\Bin\..\include\string.h
+prototest\stream_buffer.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
+prototest\stream_buffer.o: D:\Programfile\MDK\Core\ARM\ARM_Compiler_5.06u7\Bin\..\include\stddef.h
+prototest\stream_buffer.o: ../Core/Inc/FreeRTOSConfig.h
+prototest\stream_buffer.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
+prototest\stream_buffer.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h
+prototest\stream_buffer.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h
+prototest\stream_buffer.o: ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/portmacro.h
+prototest\stream_buffer.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h
+prototest\stream_buffer.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/task.h
+prototest\stream_buffer.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/list.h
+prototest\stream_buffer.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/stream_buffer.h
