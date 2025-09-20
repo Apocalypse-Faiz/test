@@ -65,7 +65,7 @@ CAN_RxHeaderTypeDef header;
 uint8_t CAN_Rx_Data[8];
 uint16_t IT = 0;
 uint8_t success = 0;
-uint16_t testflag = 1;
+uint16_t testflag = 0;
 
 /* USER CODE END PV */
 
