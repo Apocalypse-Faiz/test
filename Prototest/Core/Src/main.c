@@ -29,18 +29,18 @@
 
 /* Private typedef -----------------------------------------------------------*/
 /* USER CODE BEGIN PTD */
-//滤波器编�????
+//滤波器编�????
 #define CAN_FILTER(x) ((x) << 3)
 
 //接收队列
 #define CAN_FIFO_0 (0 << 2)
 #define CAN_FIFO_1 (1 << 2)
 
-//标准帧或扩展�????
+//标准帧或扩展�????
 #define CAN_STDID (0 << 1)
 #define CAN_EXTID (1 << 1)
 
-//数据帧或遥控�????
+//数据帧或遥控�????
 #define CAN_DATA_TYPE (0 << 0)
 #define CAN_REMOTE_TYPE (1 << 0)
 
@@ -65,6 +65,7 @@ CAN_RxHeaderTypeDef header;
 uint8_t CAN_Rx_Data[8];
 uint16_t IT = 0;
 uint8_t success = 0;
+uint16_t testflag = 1;
 
 /* USER CODE END PV */
 
@@ -107,7 +108,7 @@ void CAN_Filter_Mask_Config(CAN_HandleTypeDef *hcan, uint8_t Object_Para, uint32
 
   if(Object_Para & 0x02)
   {
-    //数据�????
+    //数据�????
     can_filter_init.FilterIdHigh = ID << 3 << 16;
     can_filter_init.FilterIdLow = ID << 3 | ((Object_Para & 0x03) << 1);
     can_filter_init.FilterMaskIdHigh = Mask_ID << 3 <<16;
@@ -115,7 +116,7 @@ void CAN_Filter_Mask_Config(CAN_HandleTypeDef *hcan, uint8_t Object_Para, uint32
   }
   else
   {
-    //遥控�????
+    //遥控�????
     can_filter_init.FilterIdHigh = ID << 5;
     can_filter_init.FilterIdLow = ((Object_Para & 0x03) << 1);
     can_filter_init.FilterMaskIdHigh = Mask_ID << 5;
